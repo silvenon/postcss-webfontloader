@@ -1,0 +1,48 @@
+{
+  "name": "postcss-webfontloader",
+  "version": "0.0.1",
+  "description": "Provides fallbacks for loading fonts with webfontloader",
+  "main": "index.js",
+  "repository": "https://github.com/silvenon/postcss-webfontloader",
+  "author": "Matija Marohnić <matija.marohnic@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "postcss",
+    "postcss-plugin",
+    "css",
+    "font",
+    "fallback",
+    "webfontloader"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "postcss": "^7.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.1.3",
+    "jest": "^23.6.0",
+    "lint-staged": "^8.0.4",
+    "prettier": "^1.14.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "es5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "jest --findRelatedTests"
+    ]
+  }
+}
