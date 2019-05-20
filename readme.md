@@ -1,6 +1,12 @@
 # postcss-webfontloader
 
-Provides fallbacks for loading fonts with [webfontloader][].
+Provides fallbacks for loading fonts with [Web Font Loader][webfontloader].
+
+---
+
+**Deprecated**: Google Fonts [started offering](https://addyosmani.com/blog/google-fonts-font-display/) stylesheets with `font-display: swap`, which has a [decent browser support](https://caniuse.com/#feat=css-font-rendering-controls), so you might want to consider using that instead of mimicking the same behavior by loading fonts with Web Font Loader and generating fallbacks using this PostCSS plugin.
+
+---
 
 ## Setup
 
