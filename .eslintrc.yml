@@ -12,5 +12,5 @@ extends:
 
 overrides:
   - files: __tests__/**/*.js
-    env:
-      jest: true
+    extends:
+      - plugin:jest/recommended
