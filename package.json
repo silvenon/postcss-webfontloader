@@ -17,7 +17,8 @@
   "scripts": {
     "prelint": "eslint --print-config index.js | eslint-config-prettier-check",
     "lint": "eslint . --report-unused-disable-directives",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "yarn lint && yarn test"
   },
   "dependencies": {
     "postcss": "^7.0.5"
