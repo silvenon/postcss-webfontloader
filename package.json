@@ -40,13 +40,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn prepublishOnly"
     }
   },
   "lint-staged": {
     "*.js": [
-      "eslint",
-      "jest --findRelatedTests"
+      "eslint"
     ]
   }
 }
