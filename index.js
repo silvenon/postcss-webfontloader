@@ -20,11 +20,10 @@ module.exports = postcss.plugin(
 
         decl.replaceWith(fallbackDecl)
         rule.cloneAfter({
-          selectors: rule.selectors.map(
-            selector =>
-              modules
-                ? `:global(${SELECTOR_ACTIVE}) ${selector}`
-                : `${SELECTOR_ACTIVE} ${selector}`
+          selectors: rule.selectors.map(selector =>
+            modules
+              ? `:global(${SELECTOR_ACTIVE}) ${selector}`
+              : `${SELECTOR_ACTIVE} ${selector}`
           ),
           nodes: [activeDecl],
         })
