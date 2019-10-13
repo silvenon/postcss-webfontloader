@@ -8,9 +8,7 @@ plugins:
   - prettier
 extends:
   - eslint:recommended
-  - prettier
-rules:
-  prettier/prettier: error
+  - plugin:prettier/recommended
 
 overrides:
   - files: __tests__/**/*.js
